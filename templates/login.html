@@ -7,5 +7,29 @@
 {% endblock %}
 
 {% block body %}
-
+        <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="frame">
+                    <div class="logo">
+                        <img src="{{url_for('static', filename='images/logo.png')}}" alt="Logo" class="img-responsive">
+                    </div>
+                    <div class="title">
+                        <span style="width: 80%; float: left;">
+                            <h1>Login</h1>
+                        </span>
+                        <span style="width: 20%; float: left; margin-top: 30px; text-align: right;">
+                            <a href="#">SignUp</a>
+                        </span>
+                    </div>
+                    <form action="">
+                        <input type="text" class="form-input" placeholder="Username">
+                        <input type="password" class="form-input" placeholder="Password">
+                        <input type="submit" value="Login" class="form-btn">
+                        <span style="margin-left: 10px;"><a href="#">Forgot Password</a></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
